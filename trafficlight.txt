@@ -1,0 +1,26 @@
+int ledred = 13;        // LED connected to digital pin 13
+int ledyellow= 12;      // Button connected to digital pin 2
+int ledgreen = 11;    // Variable for reading the button status
+
+void setup()
+{
+  pinMode(ledred, OUTPUT);      // Set LED as an output
+  pinMode(ledyellow, OUTPUT);      // Set LED as an output
+  pinMode(ledgreen, OUTPUT);      // Set LED as an output
+}
+void loop() {
+digitalWrite(ledred,HIGH);
+ digitalWrite(ledyellow,LOW);
+ digitalWrite(ledgreen,LOW);
+ delay(5000);
+ digitalWrite(ledred,LOW);
+ digitalWrite(ledyellow,HIGH);
+ digitalWrite(ledgreen,LOW);
+ delay(3000);
+digitalWrite(ledred,LOW);
+ digitalWrite(ledyellow,LOW);
+ digitalWrite(ledgreen,HIGH);
+ delay(7000);
+
+}
+
